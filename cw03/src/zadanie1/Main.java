@@ -12,5 +12,12 @@ public class Main {
         System.out.println(0472);
         System.out.println(0x13a);
         System.out.println(0b100111010);
+        
+        // literał liczb rzeczywistych
+        System.out.println(2.71828182);
+        
+        // literały znakowe
+        System.out.println('a');
+        System.out.println('\uDFA2');
     }
 }
