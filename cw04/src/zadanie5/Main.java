@@ -9,16 +9,16 @@ public class Main {
         */
         
         int k = 5;
-        int n = 1 << k;
-        IO.println(n);
+        int num = 1 << k;
+        IO.println(num);
         
         k = 6;
-        n = 1 << k;
-        IO.println(n);
+        num = 1 << k;
+        IO.println(num);
         
         k = 8;
-        n = 1 << k;
-        IO.println(n);
-        // liczba k jest wykładnikiem liczby 2, a liczba n jest to 2 do potęgi k
+        num = 1 << k;
+        IO.println(num);
+        // liczba k jest wykładnikiem liczby 2, a liczba num jest to 2 do potęgi k
     }
 }
