@@ -18,5 +18,7 @@ public class Main {
         
         bmi = weight / Math.pow(height, 2);
         JOptionPane.showMessageDialog(null, "Twój współczynnik BMI wynosi " + bmi);
+        
+        input.close();
     }
 }
