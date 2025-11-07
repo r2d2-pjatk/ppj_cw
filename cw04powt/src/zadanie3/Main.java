@@ -13,7 +13,11 @@ public class Main {
         IO.print("Jaki jest twój wzrost (w metrach)?: ");
         height = input.nextDouble();
         
+<<<<<<< HEAD
         IO.print("\nJaka jest twoja waga (w kilogramach)?: ");
+=======
+        IO.print("Jaka jest twoja waga (w kilogramach)?: ");
+>>>>>>> 8e381ce (napisano program obliczający współczynnik BMI, wyświetlając go w oknie dialogowym)
         weight = input.nextDouble();
         
         bmi = weight / Math.pow(height, 2);
