@@ -19,5 +19,7 @@ public class Main {
             IO.println("OK");
         else
             IO.println("NOT OK");
+        
+        input.close();
     }
 }
