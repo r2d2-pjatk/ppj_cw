@@ -13,7 +13,7 @@ public class Main {
         b = input.nextInt();
         c = input.nextInt();
         
-        boolean areTwoOfThreeEqual = ((a == b) & (a != c)) || ((a == c) & (a != b)) || ((b == c) & (b != a));
+        boolean areTwoOfThreeEqual = ((a == b) && (a != c)) || ((a == c) && (a != b)) || ((b == c) && (b != a));
         
         if (areTwoOfThreeEqual)
             IO.println("OK");
