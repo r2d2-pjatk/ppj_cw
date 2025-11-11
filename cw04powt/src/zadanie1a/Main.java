@@ -14,7 +14,7 @@ public class Main {
         // int min5DigitBinNum = 0b10000; // 16
         // int max5DigitBinNum = 0b11111; // 31
         
-        int a = 24;
+        int a = 0b11000; // 24
         int numOfDigits = 5;
         int sumOfDigits = 0;
         int nextBinDigit;
