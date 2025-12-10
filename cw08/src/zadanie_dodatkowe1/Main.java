@@ -16,6 +16,7 @@ public class Main {
         int[] rollCountArr = new int[numOfRollCalls];
         
         for (int i = 0; i < rollCountArr.length; i++) {
+            System.out.println("Wywołanie " + (i + 1) + " metody roll()");
             rollCountArr[i] = roll();
         }
         
