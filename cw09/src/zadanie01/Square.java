@@ -1,3 +1,5 @@
+package zadanie01;
+
 public class Square {
     
     private double side;
@@ -49,6 +51,6 @@ public class Square {
     
     @Override
     public String toString() {
-        return "Square[" + side + "]";
+        return "zadanie1.Square[" + side + "]";
     }
 }
