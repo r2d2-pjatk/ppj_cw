@@ -1,4 +1,4 @@
-package zadanie03;
+package zadanie02;
 
 public class Bank {
 
