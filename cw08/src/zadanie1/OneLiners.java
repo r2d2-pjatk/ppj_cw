@@ -50,7 +50,7 @@ public class OneLiners {
     }
     
     public static boolean monot(double a, double b, double c) {
-        return (b > a && c > b) || (a > b & b > c);
+        return (b > a && c > b) || (a > b && b > c);
     }
     
     public static double maxEl(double a, double b, double c) {
