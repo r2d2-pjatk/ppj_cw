@@ -71,22 +71,22 @@ public class FuncStat {
     }
     
     public static int gcdR(int a, int b) {
-        if (b % a == 0) {
-            return a;
+        if (a % b == 0) {
+            return b;
         } else {
-            return gcdR(b % a, a);
+            return gcdR(b, a % b);
         }
     }
     
     public static int gcdI(int a, int b) {
-        while (b % a != 0) {
-            int r = b % a;
+        while (a % b != 0) {
+            int r = a % b;
             
-            b = a;
-            a = r;
+            a = b;
+            b = r;
         }
         
-        return a;
+        return b;
     }
     
     public static int maxElem(int[] arr, int from) {
