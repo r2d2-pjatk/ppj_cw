@@ -26,7 +26,7 @@ public class Main {
                 pairOfSixInFirstRollCount++;
         }
         double pairOfSixInFirstRoll = (double) pairOfSixInFirstRollCount / numOfRollCalls * 100;
-        System.out.print("In first roll:     ");
+        System.out.print("In first roll    : ");
         System.out.printf("%.2f", pairOfSixInFirstRoll);
         System.out.println("%");
         
@@ -42,15 +42,15 @@ public class Main {
     }
     
     private static int roll() {
-        int firstThrow, secondThrow;
+        int firstCube, secondCube;
         int rollCount = 0;
         
         do {
-            firstThrow = (int) (Math.random() * 6 + 1);
-            secondThrow = (int) (Math.random() * 6 + 1);
-            System.out.println("Rzut 1: " + firstThrow + ", Rzut 2: " + secondThrow);
+            firstCube = (int) (Math.random() * 6 + 1);
+            secondCube = (int) (Math.random() * 6 + 1);
+            System.out.println("Kość 1: " + firstCube + ", Kość 2: " + secondCube);
             rollCount++;
-        } while (!(firstThrow == 6 && secondThrow == 6));
+        } while (!(firstCube == 6 && secondCube == 6));
         
         return rollCount;
     }
