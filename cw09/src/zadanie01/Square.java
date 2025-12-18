@@ -51,6 +51,6 @@ public class Square {
     
     @Override
     public String toString() {
-        return "zadanie1.Square[" + side + "]";
+        return "Square[" + side + "]";
     }
 }
