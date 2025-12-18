@@ -23,7 +23,7 @@ public class Square {
     public static Square getMax(Square[] sqs) {
         int maxSquareIndex = 0;
         for (int i = 1; i < sqs.length; i++) {
-            if (sqs[i].getSide() > sqs[maxSquareIndex].getSide())
+            if (sqs[i].getArea() > sqs[maxSquareIndex].getArea())
                 maxSquareIndex = i;
         }
         return sqs[maxSquareIndex];
