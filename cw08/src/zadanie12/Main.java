@@ -35,16 +35,17 @@ public class Main {
         for (int i = 0; i < results.length; i++) {
             String homeTeam = results[i][0];
             String awayTeam = results[i][2];
-            int homeTeamScore = Integer.parseInt(results[i][1]);
-            int awayTeamScore = Integer.parseInt(results[i][3]);
             boolean isHomeTeam = homeTeam.equals(team);
             boolean isAwayTeam = awayTeam.equals(team);
-            boolean homeTeamWon = homeTeamScore > awayTeamScore;
-            boolean awayTeamWon = homeTeamScore < awayTeamScore;
-            boolean draw = homeTeamScore == awayTeamScore;
             
             if (!(isAwayTeam || isHomeTeam))
                 continue;
+            
+            int homeTeamScore = Integer.parseInt(results[i][1]);
+            int awayTeamScore = Integer.parseInt(results[i][3]);
+            boolean homeTeamWon = homeTeamScore > awayTeamScore;
+            boolean awayTeamWon = homeTeamScore < awayTeamScore;
+            boolean draw = homeTeamScore == awayTeamScore;
             
             if ((isHomeTeam && homeTeamWon) || (isAwayTeam && awayTeamWon)) {
                 sumOfPoints += 3;
