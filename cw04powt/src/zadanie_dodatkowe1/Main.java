@@ -15,7 +15,7 @@ public class Main {
         */
         Scanner sc = new Scanner(System.in);
         double a, b;
-        double result = 0;
+        double result;
         String calcSymbol;
         
         System.out.println("Podaj dwie liczby:");
