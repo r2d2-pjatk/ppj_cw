@@ -1,6 +1,8 @@
 package zadanie_dodatkowe1;
 
 
+import java.util.Scanner;
+
 public class Main {
     static void main() {
         /*
@@ -11,7 +13,10 @@ public class Main {
         Jako dodatkowe wyzwanie możesz spróbować przerobić program w taki sposób,
         żeby działał dla dowolnej ilości cyfr w liczbie :)
         */
-        int number = 123;
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Wprowadź 3-cyfrową liczbę naturalną, niebędącą n-krotnością 10: ");
+        int number = sc.nextInt();
         
         int hundredsDigit = number % 10;
         int tensDigit = ((number % 100) - hundredsDigit) / 10;
@@ -19,5 +24,7 @@ public class Main {
         
         int reversedNumber = hundredsDigit * 100 + tensDigit * 10 + onesDigit;
         IO.println(reversedNumber);
+        
+        sc.close();
     }
 }
